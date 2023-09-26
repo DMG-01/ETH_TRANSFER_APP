@@ -1,0 +1,146 @@
+* {
+    margin:0;
+    box-sizing:border-box;
+}
+body {
+    background-image: linear-gradient(to right top, #1a2530, #2c3e50, #6a5acd, #8e44ad, #59285a);
+}
+#nav {
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-around;
+  border:none;
+  padding-top:30px;
+}
+#logo {
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content: flex-start; 
+}
+#links {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+#links p {
+    margin-left:20px;
+    font-size:20px;
+    font-weight:bold;
+}
+#links button {
+    margin-left:20px;
+    width:100px;
+    height:30px;
+    background-color:rgb(50, 106, 226);
+    font-weight:bolder;
+    border:none;
+    border-radius:20px;
+}
+#dlogo {
+    font-size:30px;
+}
+#secondPage {
+    display:flex;
+    flex-direction: row;
+    margin-top:50px;
+    justify-content: space-evenly;
+}
+#About{
+ border:1px solid bluee;
+ padding-left:0%;
+ margin-left:0%;
+ 
+}
+#About h1 {
+    font-size:50px;
+    font-weight:200;
+}
+#About p {
+    font-size:20px;
+    margin-top:20px;
+    
+}
+#About button {
+    height:45px;
+    width:80%;
+    margin-top:40px;
+    background-color:rgb(50, 106, 226);
+    font-weight:bolder;
+    border-radius:15px;
+    border:none;
+    font-size:15px;
+}
+
+#pros{
+    display:flex;
+    flex-direction: column;
+    border:1px solid none;
+    margin-top:10px;
+    margin-right:70px;
+}
+#top  {
+    display:flex;
+    flex-direction:row;
+    border:1px solid none;
+    margin-top:10px;
+}
+#top p {
+    margin-right:10px;
+    
+}
+#second {
+    display:flex;
+    flex-direction:row;
+    border:1px solid none;
+    margin-top:10px;
+}
+#second p {
+    margin-right:10px;
+    
+}
+#transfer {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+#virtualCard {
+    width:350px;
+    background: linear-gradient(to top right, #FAD02E, #FFC0CB, #A0E7E5);
+    border:none;
+    height:40%;
+    border-radius:20px;
+}
+#send {
+    background-color:#1a2530;
+    height:60%;
+    width:450px;
+    margin-top:40px;
+    border-radius:40px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: space-around;
+    padding-right:80px;
+}
+#send input {
+    width:150%;
+    height:25px;
+    border-radius:5px;
+    border:none;
+}
+hr{
+    border:1px solid silver;
+    width:100%;
+    margin-left:70px;
+}
+#send button {
+    width:200px;
+    margin-left:60px;
+    height:30px;
+    border:none;
+    background-color: none;
+    border-radius:10px;
+    color:bolder;
+}
