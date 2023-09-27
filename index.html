@@ -18,7 +18,7 @@
             <div><p>Transfer</p></div>
             <div><p>Contact</p></div>
             <div><p>History</p></div>
-            <div><button>Connect</button></div>
+            <div><button id="connect-button">Connect</button></div>
             </div>
     </div>
 
@@ -27,7 +27,7 @@
         <div>
         <h1>Send Ethereum <br> across the world</h1>
         <p>explore the world around ethereum.<br> Transfer ether easily on <br><strong> ETH_VELOCIDA </strong></p>
-        <button>Connect Wallet</button>
+        <button id="connect-wallet-button">Connect Wallet</button>
         </div>
 
         <div id="pros">
@@ -51,16 +51,16 @@
         </div>
 
         <div id="send">
-            <div><input type="text" placeholder="Recipient"></div>
-            <div><input type="text" placeholder="Amount"></div>
-             <div><input type="text" placeholder="Description"></div>
+            <div><input type="text" placeholder="Recipient" id="recipient"></div>
+            <div><input type="text" placeholder="Amount" id="amount"></div>
+             <div><input type="text" placeholder="Description" id="description"></div>
              <hr>
-             <div><button><strong>Send Now</strong></button></div>
+             <div><button id="send-transaction"><strong>Send Now</strong></button></div>
         </div>
     </div>
     </div>
     <h4><strong>copyright DVYNE</strong></h4>
 </body>
-
+<script src="./index.js" type="module"></script>
 
 </html>

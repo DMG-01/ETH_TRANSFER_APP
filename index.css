@@ -4,6 +4,7 @@
 }
 body {
     background-image: linear-gradient(to right top, #1a2530, #2c3e50, #6a5acd, #8e44ad, #59285a);
+    height:10%;
 }
 #nav {
   display:flex;
@@ -123,6 +124,7 @@ body {
     align-items:center;
     justify-content: space-around;
     padding-right:80px;
+    
 }
 #send input {
     width:150%;
