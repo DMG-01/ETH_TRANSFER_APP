@@ -25,10 +25,18 @@ body {
     flex-direction: row;
     align-items: center;
 }
-#links p {
+#links a {
     margin-left:20px;
     font-size:20px;
     font-weight:bold;
+    text-decoration:none;
+    color:black;
+}
+#links a:active {
+    text-decoration:overline;
+}
+#links a:visited {
+    text-decoration:underline
 }
 #links button {
     margin-left:20px;
