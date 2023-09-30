@@ -5,11 +5,13 @@ import {contractAddress,ABI} from "./constants.js"
 const sendTransaction = document.getElementById("send-transaction")
 const connectButton = document.getElementById("connect-button")
 const connectWalletButton = document.getElementById("connect-wallet-button")
-//const balanceButton = document.getElementById("see")
-//balanceButton.onclick = balance
-connectWalletButton.onclick = connectWallet
-connectButton.onclick = connect
+const balanceButton = document.getElementById("accountBalance")
+//const displayBalance = document.getElementById("see")
+//displayBalance.onclick = showBalance
 sendTransaction.onclick = transfer
+connectButton.onclick = connect
+connectWalletButton.onclick = connectWallet
+
 
 async function connect() {
     if(window.ethereum !== "undefined"){
@@ -56,19 +58,6 @@ async function transfer() {
     
 }
 }
-/*
-async function balance() {
-    alert("clicked")
-    if(window.ethereum !== "undefined"){
-    const provider = new ethers.providers.Web3Provider(window.ethereum)
-    const Signer = provider.getSigner()
-    const Contract = new ethers.Contract(contractAddress,ABI,Signer)
-    try {
-        const balance = await Contract.balanceOfUser()
-        console.log(balance)
-    } catch(error){
-        console.log(error)
-    }
-    }
-}
-*/
+
+
+

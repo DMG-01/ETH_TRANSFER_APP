@@ -97,4 +97,24 @@ background-color: transparent;
     margin-top:10px;
     font-size:11px;
 }
-
+#amounth2 {
+    font-size:30px;
+    font-weight:bolder;
+    margin-right:0;
+}
+#amount {
+    display:flex;
+    flex-direction:row;
+    
+}
+#history{
+    display:flex;
+    flex-direction:column;
+    border:1px solid blue;
+}
+#inout {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    font-weight:bolder;
+}
