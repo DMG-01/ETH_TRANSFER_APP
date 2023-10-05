@@ -1,120 +1,171 @@
 * {
     box-sizing: border-box;
 }
+
 #nav {
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content:space-around;
-    border:none;
-    padding-top:30px;
-  }
-  #logo {
-    display:flex;
-    flex-direction:row;
-    align-items:center;
-    justify-content: flex-start; 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    border: none;
+    padding-top: 30px;
 }
+
+#button {
+    display: block;
+}
+/*
+@media only screen and (max-width: 690px) {
+    #button:hover + #dropdown-content {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+    }
+}
+*/
+#logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 #dlogo {
-    font-size:30px;
+    font-size: 30px;
 }
+
 #links {
-    display:flex;
+    display: flex;
     flex-direction: row;
     align-items: center;
 }
+
+#dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+@media only screen and (max-width: 690px) {
+    #dropdown-content {
+        display: none;
+        flex-direction: column;
+    }
+}
+
 #links a {
-    margin-left:20px;
-    font-size:20px;
-    font-weight:bold;
-    color:black;
-    text-decoration:none;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
 }
+
 #links a:active {
-    text-decoration:overline;
+    text-decoration: overline;
 }
+
 #links a:visited {
-    text-decoration:underline
+    text-decoration: underline;
 }
+
 #links button {
-    margin-left:20px;
-    width:100px;
-    height:30px;
-    background-color:rgb(50, 106, 226);
-    font-weight:bolder;
-    border:none;
-    border-radius:20px;
+    margin-left: 20px;
+    width: 100px;
+    height: 30px;
+    background-color: rgb(50, 106, 226);
+    font-weight: bolder;
+    border: none;
+    border-radius: 20px;
 }
+
 body {
-    border:1px solid red;
-    margin-left:25%;
-    margin-right:25%;
-    display:flex;
-    flex-direction:column;
-    
+    border: 1px solid red;
+    margin-left: 25%;
+    margin-right: 25%;
+    display: flex;
+    flex-direction: column;
 }
+
 #card {
-width:50%;
-border:1px solid red;
-margin-right: 25%;
-margin-left:25%;
-border-radius:15px;
-padding-left:5px;
-padding-right:5px;
+    height:auto;
+    width:auto;
+    border: 1px solid red;
+   /* margin-right: 25%;
+    margin-left: 25%;*/
+    border-radius: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top:50px;
 }
-#card-topp{
-    padding-top:0;
-    display:flex;
-    flex-direction:row;
-    align-items:center; 
+
+#card-topp {
+    padding-top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
 #card-top {
-    display:flex;
-    flex-direction:row;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
-#dlogo{
-    font-size:20px;
+
+#dlogo {
+    font-size: 20px;
 }
-#card h2{
-    margin-top:3px;
+
+#card h2 {
+    margin-top: 3px;
 }
-.bi-eye-slash{
-    font-weight:bolder;
-    font-size:25px;
+
+.bi-eye-slash {
+    font-weight: bolder;
+    font-size: 25px;
 }
+
 #see {
-width:70px;
-height:40px;
-border:none;
-background-color: transparent;
+    width: 70px;
+    height: 40px;
+    border: none;
+    background-color: transparent;
 }
+
 #address {
-    font-weight:bolder;
+    font-weight: bolder;
+    margin-top:15px;
 }
+
 #eth {
-    margin-top:10px;
-    font-size:11px;
+    margin-top: 10px;
+    font-size: 11px;
+    text-align: center;
 }
+
 #amounth2 {
-    font-size:30px;
-    font-weight:bolder;
-    margin-right:0;
+    font-size: 30px;
+    font-weight: bolder;
+    margin-right: 0;
 }
+
 #amount {
-    display:flex;
-    flex-direction:row;
-    
+    display: flex;
+    flex-direction: row;
 }
-#history{
-    display:flex;
-    flex-direction:column;
-    border:1px solid blue;
+
+#history {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid blue;
 }
+
 #inout {
-    display:flex;
-    flex-direction:row;
-    justify-content:space-between;
-    font-weight:bolder;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: bolder;
 }
