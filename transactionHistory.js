@@ -1,12 +1,19 @@
 //alert("transactioHistory.js is connected")
+
+let screenWidth = window.innerWidth
+if(screenWidth <= 820){
+  alert("YOU NEED A A DESKTOP OR LAPTOP TO ACCESS THIS SITE")
+  body.style.display = "none";
+  }
+
 import {ethers} from "./ethers-5.6.esm.min.js"
 import {contractAddress,ABI} from "./constants.js"
 const displayBalance = document.getElementById("see")
 const  balanceScreen = document.getElementById("amounth2")
 const amountIn = document.getElementById("in")
 const amountOut = document.getElementById("out")
-const dropdown = document.getElementById("button")
-dropdown.onclick = toggleDropdown;
+const showConnected = document.getElementById("connect-button")
+
 displayBalance.onclick = display
 
  async function display() {
@@ -26,14 +33,10 @@ displayBalance.onclick = display
         const totalOut = parseFloat(ethers.utils.formatEther(totalAmountOut))
         amountIn.innerHTML = "IN: " + totalIn.toFixed(2) + "ether"
         amountOut.innerHTML = "OUT: " + totalOut.toFixed(2) + "ether"
+        showConnected.innerHTML = "CONNECTED"
      }
 }
 
-function toggleDropdown() {
-  var dropdownContent = document.getElementById("dropdown-content");
-  if (dropdownContent.style.display === "none") {
-      dropdownContent.style.display = "block";
-  } else {
-      dropdownContent.style.display = "none";
-  }
-}
+displayBalance.addEventListener("dblclick", function() {
+ location.reload();
+})

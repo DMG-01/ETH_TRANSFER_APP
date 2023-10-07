@@ -2,7 +2,7 @@
     margin:0;
     box-sizing:border-box;
 }
-body {
+#body {
     background-image: linear-gradient(to right top, #1a2530, #2c3e50, #6a5acd, #8e44ad, #59285a);
     height:10%;
 }
@@ -55,6 +55,7 @@ body {
     flex-direction: row;
     margin-top:50px;
     justify-content: space-evenly;
+    margin-bottom:110px;
 }
 #About{
  border:1px solid bluee;
@@ -153,4 +154,7 @@ hr{
     background-color: none;
     border-radius:10px;
     color:bolder;
+}
+h4 {
+    text-align:center;
 }

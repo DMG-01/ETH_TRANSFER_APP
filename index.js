@@ -1,5 +1,14 @@
 //alert("javascript is connected")
 // display "please install metamask elsewhere"
+
+let screenWidth = window.innerWidth
+console.log(screenWidth)
+
+if(screenWidth <= 820){
+alert("YOU NEED A A DESKTOP OR LAPTOP TO ACCESS THIS SITE")
+body.style.display = "none";
+}
+
 import {ethers} from "./ethers-5.6.esm.min.js"
 import {contractAddress,ABI} from "./constants.js"
 const sendTransaction = document.getElementById("send-transaction")

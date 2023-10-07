@@ -11,18 +11,8 @@
     padding-top: 30px;
 }
 
-#button {
-    display: block;
-}
-/*
-@media only screen and (max-width: 690px) {
-    #button:hover + #dropdown-content {
-        display: flex;
-        flex-direction: column;
-        background-color: red;
-    }
-}
-*/
+
+
 #logo {
     display: flex;
     flex-direction: row;
@@ -42,18 +32,15 @@
 
 #dropdown-content {
     position: absolute;
-    background-color: #f9f9f9;
+    
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    
     z-index: 1;
+    display:flex;
+    flex-direction:row;
 }
 
-@media only screen and (max-width: 690px) {
-    #dropdown-content {
-        display: none;
-        flex-direction: column;
-    }
-}
+
 
 #links a {
     margin-left: 20px;
@@ -82,23 +69,27 @@
 }
 
 body {
-    border: 1px solid red;
-    margin-left: 25%;
-    margin-right: 25%;
+    border: none;
+    margin-left: 5%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
+    background-image: linear-gradient(to right top, #1a2530, #2c3e50, #6a5acd, #8e44ad, #59285a);
+    background-repeat:no-repeat;
+    background-size:cover;
 }
 
 #card {
-    height:auto;
+    min-height:250px;
     width:auto;
-    border: 1px solid red;
-   /* margin-right: 25%;
-    margin-left: 25%;*/
+    border: none;
+    margin-right: 25%;
+    margin-left: 25%;
     border-radius: 15px;
     padding-left: 5px;
     padding-right: 5px;
     margin-top:50px;
+    background: linear-gradient(to top right, #FAD02E, #FFC0CB, #A0E7E5);
 }
 
 #card-topp {
@@ -137,13 +128,15 @@ body {
 
 #address {
     font-weight: bolder;
-    margin-top:15px;
+    margin-top:40px;
+    margin-bottom:40px;
 }
 
 #eth {
     margin-top: 10px;
     font-size: 11px;
     text-align: center;
+    padding-bottom:5px;
 }
 
 #amounth2 {
@@ -158,9 +151,11 @@ body {
 }
 
 #history {
+    margin-top:70px;
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
+    border:none;
+    margin-bottom:0px;
 }
 
 #inout {
@@ -168,4 +163,14 @@ body {
     flex-direction: row;
     justify-content: space-between;
     font-weight: bolder;
+    font-size:20px;
+    margin-top:50px;
+    margin-bottom:0px;
+}
+#history h1 {
+    text-align:center;
+    text-decoration: underline;
+}
+h4{
+    text-align:center;
 }
