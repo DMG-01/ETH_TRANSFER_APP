@@ -1,1 +1,4 @@
  smart contract ---- display the connected address
+ other accounts ----- store previous accounts
+ store name with address
+ 4 tell user to connect if connect button is not found
